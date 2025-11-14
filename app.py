@@ -1,6 +1,19 @@
 import streamlit as st
 
 st.set_page_config(page_title="Index des polymères", layout="centered")
+# Supprimer l'encadré rouge par défaut sur le champ de saisie
+st.markdown("""
+    <style>
+    div[data-testid="stTextInput"] > div > input:focus {
+        border: 1px solid #ccc !important;
+        box-shadow: none !important;
+    }
+    div[data-testid="stTextInput"] > div > input {
+        border: 1px solid #ccc !important;
+        border-radius: 5px;
+    }
+    </style>
+""", unsafe_allow_html=True)
 st.title("🔍 Recherche d'acronymes de polymères")
 
 # Dictionnaire complet des acronymes
