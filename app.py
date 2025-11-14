@@ -6,13 +6,6 @@ st.title("🔍 Recherche d'acronymes de polymères")
 # Champ de saisie
 acronym = st.text_input("Entrez un acronyme de polymère (ex : PET, PVC, PMMA)").upper()
 
-# Dictionary of polymer acronyms
-polymer_data = {
-    import streamlit as st
-
-st.set_page_config(page_title="Index des polymères", layout="centered")
-st.title("🔍 Recherche d'acronymes de polymères")
-
 # Dictionnaire complet des acronymes
 polymer_data = {
     "ABS": {"nom": "Acrylonitrile Butadiène Styrène", "formule": "(C8H8·C4H6·C3H3N)n"},
