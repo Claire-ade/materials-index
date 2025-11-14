@@ -87,18 +87,14 @@ polymer_data = {
 # Champ de saisie
 acronym = st.text_input("Entrez un acronyme de polymère (ex : PET, PVC, PMMA)").upper()
 
-# Détection et couleur dynamique
-is_known = acronym in polymer_data if acronym else None
-
-# Couleur dynamique
-if is_known is not None:
-    color = "#28a745" if is_known else "#dc3545"  # vert ou rouge
-    st.markdown(f"""
+# Appliquer encadrement vert uniquement si reconnu
+if acronym and acronym in polymer_data:
+    st.markdown("""
         <style>
-        div[data-testid="stTextInput"] > div > input {{
-            border: 2px solid {color};
+        div[data-testid="stTextInput"] > div > input {
+            border: 2px solid #28a745;
             border-radius: 5px;
-        }}
+        }
         </style>
     """, unsafe_allow_html=True)
 
