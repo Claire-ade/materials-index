@@ -125,13 +125,11 @@ if acronym:
         st.write(polymer_data[acronym]["nom"])
         st.subheader("Formule chimique")
         st.latex(polymer_data[acronym]["formule"])
-        
+    else:
+        st.error("Acronyme non trouvé. Essayez un autre.")
     if "image_url" in polymer_data[acronym]:
         st.image(
         polymer_data[acronym]["image_url"],
         caption=f"Structure de {polymer_data[acronym]['nom']}",
         use_column_width=True
     )
-    
-    else:
-        st.error("Acronyme non trouvé. Essayez un autre.")
