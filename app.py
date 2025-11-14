@@ -73,7 +73,7 @@ polymer_data = {
     "PPS": {"nom": "Polysulfure de phénylène", "formule": r"[-C_6H_4-S-]_n"},
     "PSU": {"nom": "Polysulfone", "formule": r"[-C_6H_4-SO_2-C_6H_4-O-]_n"},
     "TPI": {"nom": "Polyimide thermoplastique", "formule": r"[-C_6H_4-N(CO)-C_6H_4-CO-]_n"},
-    "ETFE": {"nom": "Copolymère éthylène-tétrafluoroéthylène", "formule": r"[-CH_2-CH_2-CH_2-CF_4-]_n"}
+    "ETFE": {"nom": "Copolymère éthylène-tétrafluoroéthylène", "formule": r"[-CH_2-CH_2-CH_2-CF_4-]_n"},
     "FEP": {"nom": "Poly(éthylène-propylène) perfluoré", "formule": "variable"},
     "PCTFE": {"nom": "Polychlorotrifluoroéthylène", "formule": "variable"},
       "PVDF": {"nom": "Polyfluorure de vinylidène", "formule": r"(C_{2}H_{2}F_{2})_n"},
