@@ -47,8 +47,6 @@ polymer_data = {
     # Tu peux ajouter les autres ici…
 }
 
-# Input field
-acronym = st.text_input("Enter a polymer acronym (e.g. ABS, PTFE):").upper()
 
 # Affichage des résultats
 if acronym:
