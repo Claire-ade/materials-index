@@ -4,7 +4,7 @@ st.set_page_config(page_title="Index des polymères", layout="centered")
 st.title("🔍 Recherche d'acronymes de polymères")
 
 # Champ de saisie
-acronyme = st.text_input("Entrez un acronyme de polymère (ex : PET, PVC, PMMA)").upper()
+acronym = st.text_input("Entrez un acronyme de polymère (ex : PET, PVC, PMMA)").upper()
 
 # Dictionary of polymer acronyms
 polymer_data = {
