@@ -1,4 +1,21 @@
 import streamlit as st
+from rdkit import Chem
+from rdkit.Chem import Draw
+
+st.set_page_config(page_title="Structure moléculaire", layout="centered")
+st.title("🧪 Visualisation 2D de molécules")
+
+# Saisie de la formule SMILES
+smiles = st.text_input("Entrez une formule SMILES (ex : C2H4 pour l'éthylène)", "CCO")
+
+# Générer et afficher la molécule
+if smiles:
+    mol = Chem.MolFromSmiles(smiles)
+    if mol:
+        img = Draw.MolToImage(mol, size=(300, 300))
+        st.image(img, caption=f"Structure 2D de {smiles}")
+    else:
+        st.error("Formule invalide. Veuillez entrer une formule SMILES correcte.")
 
 st.set_page_config(page_title="Index des polymères", layout="centered")
 
