@@ -51,7 +51,7 @@ polymer_data = {
     "PA6-3T": {"nom": "Polyamide semi-aromatique (Trogamid)", "formule": "variable"},
     "PAA": {"nom": "Polyarylamides (Ixef)", "formule": "variable"},
     "PPA": {"nom": "Polyphtalamides (Amodel)", "formule": "variable"},
-    "PC": {"nom": "Polycarbonate", "formule": r"(C_{16}H_{14}O_3)_n"},
+    "PC": {"nom": "Polycarbonate", "formule": r"(C_{16}H_{14}O_3)_n", "image_url": https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Polycarbonate_PC.png/330px-Polycarbonate_PC.png},
     "PVC": {"nom": "Polychlorure de vinyle", "formule": r"(C_2H_3Cl)_n"},
     "PVC/A": {"nom": "Copolymère chlorure de vinyle/acrylate", "formule": "variable"},
     "PVC/ABS": {"nom": "Mélange PVC/ABS", "formule": "variable"},
