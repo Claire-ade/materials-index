@@ -87,8 +87,7 @@ polymer_data = {
     # Tu peux ajouter les autres ici…
 }
 
- 
-}
+
 
 
 # Affichage des résultats
