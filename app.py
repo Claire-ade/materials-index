@@ -1,7 +1,6 @@
 import streamlit as st
 
 st.set_page_config(page_title="Structure moléculaire", layout="centered")
-st.title("🧪 Visualisation 2D de molécules")
 st.set_page_config(page_title="Index des polymères", layout="centered")
 
 # Supprimer l'encadré rouge par défaut sur le champ de saisie
