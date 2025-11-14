@@ -1,2 +1,2 @@
-rdkit-pypi
 streamlit
+rdkit-pypi
