@@ -3,33 +3,6 @@ import streamlit as st
 st.set_page_config(page_title="Index des polymères", layout="centered")
 st.title("🔍 Recherche d'acronymes de polymères")
 
-# Champ de saisie
-acronym = st.text_input("Entrez un acronyme de polymère (ex : PET, PVC, PMMA)").upper()
-
-# Détection et couleur dynamique
-if acronym:
-    if acronym in polymer_data:
-        color = "#d4edda"  # vert clair
-        border = "#28a745"  # vert foncé
-    else:
-        color = "#f8d7da"  # rouge clair
-        border = "#dc3545"  # rouge foncé
-
-    # Affichage personnalisé
-    st.markdown(f"""
-        <style>
-        .custom-box {{
-            background-color: {color};
-            border: 2px solid {border};
-            padding: 10px;
-            border-radius: 5px;
-        }}
-        </style>
-        <div class="custom-box">
-            <strong>Acronyme saisi :</strong> {acronym}
-        </div>
-    """, unsafe_allow_html=True)
-
 # Dictionnaire complet des acronymes
 polymer_data = {
     "ABS": {"nom": "Acrylonitrile Butadiène Styrène", "formule": "(C8H8·C4H6·C3H3N)n"},
@@ -111,8 +84,32 @@ polymer_data = {
     # Tu peux ajouter les autres ici…
 }
 
+# Champ de saisie
+acronym = st.text_input("Entrez un acronyme de polymère (ex : PET, PVC, PMMA)").upper()
 
+# Détection et couleur dynamique
+if acronym:
+    if acronym in polymer_data:
+        color = "#d4edda"  # vert clair
+        border = "#28a745"  # vert foncé
+    else:
+        color = "#f8d7da"  # rouge clair
+        border = "#dc3545"  # rouge foncé
 
+    # Affichage personnalisé
+    st.markdown(f"""
+        <style>
+        .custom-box {{
+            background-color: {color};
+            border: 2px solid {border};
+            padding: 10px;
+            border-radius: 5px;
+        }}
+        </style>
+        <div class="custom-box">
+            <strong>Acronyme saisi :</strong> {acronym}
+        </div>
+    """, unsafe_allow_html=True)
 
 # Affichage des résultats
 if acronym:
