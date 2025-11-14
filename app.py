@@ -1,43 +1,62 @@
 import streamlit as st
 
-# Set up the page
-st.set_page_config(page_title="Polymer Acronym Index", layout="centered")
-st.title("🔍 Polymer Acronym Lookup")
+st.set_page_config(page_title="Index des polymères", layout="centered")
+st.title("🔍 Recherche d'acronymes de polymères")
+
+# Champ de saisie
+acronyme = st.text_input("Entrez un acronyme de polymère (ex : PET, PVC, PMMA)").upper()
 
 # Dictionary of polymer acronyms
 polymer_data = {
-    "ABS": {
-        "name": "Acrylonitrile Butadiene Styrene",
-        "formula": "(C8H8·C4H6·C3H3N)n"
-    },
-    "PTFE": {
-        "name": "Polytetrafluoroethylene",
-        "formula": "(C2F4)n"
-    },
-    "PVC": {
-        "name": "Polyvinyl Chloride",
-        "formula": "(C2H3Cl)n"
-    },
-    "PET": {
-        "name": "Polyethylene Terephthalate",
-        "formula": "(C10H8O4)n"
+    "PBT": {
+        "nom": "Polybutylène téréphtalate",
+        "formule": "(C12H12O4)n"
     },
     "PMMA": {
-        "name": "Polymethyl Methacrylate",
-        "formula": "(C5O2H8)n"
+        "nom": "Polyméthacrylate de méthyle",
+        "formule": "(C5O2H8)n"
+    },
+    "PTFE": {
+        "nom": "Polytétrafluoroéthylène (Téflon)",
+        "formule": "(C2F4)n"
+    },
+    "CA": {
+        "nom": "Acétate de cellulose",
+        "formule": "variable"
+    },
+    "PVC": {
+        "nom": "Polychlorure de vinyle",
+        "formule": "(C2H3Cl)n"
+    },
+    "PET": {
+        "nom": "Polyéthylène téréphtalate",
+        "formule": "(C10H8O4)n"
+    },
+    "PE": {
+        "nom": "Polyéthylène",
+        "formule": "(C2H4)n"
+    },
+    "PP": {
+        "nom": "Polypropylène",
+        "formule": "(C3H6)n"
+    },
+    "PS": {
+        "nom": "Polystyrène",
+        "formule": "(C8H8)n"
     }
+    # Tu peux ajouter les autres ici…
 }
 
 # Input field
 acronym = st.text_input("Enter a polymer acronym (e.g. ABS, PTFE):").upper()
 
-# Display results
+# Affichage des résultats
 if acronym:
     if acronym in polymer_data:
-        st.subheader("Full Name")
-        st.write(polymer_data[acronym]["name"])
+        st.subheader("Nom complet")
+        st.write(polymer_data[acronym]["nom"])
 
-        st.subheader("Chemical Formula")
-        st.latex(polymer_data[acronym]["formula"])
+        st.subheader("Formule chimique")
+        st.latex(polymer_data[acronym]["formule"])
     else:
-        st.error("Acronym not found. Try another one.")
+        st.error("Acronyme non trouvé. Essayez un autre.")
