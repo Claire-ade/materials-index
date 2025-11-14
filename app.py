@@ -2,7 +2,6 @@ import streamlit as st
 
 st.set_page_config(page_title="Structure moléculaire", layout="centered")
 st.set_page_config(page_title="Index des polymères", layout="centered")
-st.latex(polymer_data[acronym]["formule"])
 
 # Supprimer l'encadré rouge par défaut sur le champ de saisie
 st.markdown("""
@@ -108,7 +107,6 @@ polymer_data = {
 
 # Champ de saisie
 acronym = st.text_input("Entrez un acronyme de polymère (ex : PET, PVC, PMMA)").upper()
-
 # Appliquer encadrement vert uniquement si reconnu
 if acronym and acronym in polymer_data:
     st.markdown("""
