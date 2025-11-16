@@ -108,7 +108,7 @@ acronym = st.text_input("Entrez un acronyme de polymère (ex : PET, PVC, PMMA)")
 if acronym and acronym in polymer_data:
     st.markdown("""
         <style>
-        div[data-testid="stTextInput"] > div > input {
+        div[data-testid="stTextInputRootElement"] > div > input {
             border: 2px solid #28a745;
             border-radius: 5px;
         }
