@@ -112,7 +112,7 @@ if acronym and acronym in polymer_data:
             border: 2px solid #28a745;
             border-radius: 5px;
         }
-        div[data-testid="stTextInput"] > div > input:focus {
+        div[data-testid="stTextInputRootElement"] > div > input:focus {
             border: 2px solid #28a745;
             border-radius: 5px;
         }
