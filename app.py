@@ -6,16 +6,13 @@ st.set_page_config(page_title="Index des polymères", layout="centered")
 # Supprimer l'encadré rouge par défaut sur le champ de saisie
 st.markdown("""
     <style>
-    /* Supprime l'encadré rouge par défaut */
     div[data-testid="stTextInput"] > div > input {
         border: 1px solid #ccc !important;
         border-radius: 5px;
-        box-shadow: none !important;
     }
 
-    /* Supprime l'encadré rouge au focus */
     div[data-testid="stTextInput"] > div > input:focus {
-        border: 1px solid #999 !important;
+        border: 1px solid #ccc !important;
         outline: none !important;
         box-shadow: none !important;
     }
@@ -118,18 +115,15 @@ if acronym and acronym in polymer_data:
         </style>
     """, unsafe_allow_html=True)
 
-# Affichage des résultats
-if acronym:
-    if acronym in polymer_data:
-        st.subheader("Nom complet")
-        st.write(polymer_data[acronym]["nom"])
-        st.subheader("Formule chimique")
-        st.latex(polymer_data[acronym]["formule"])
-    else:
-        st.error("Acronyme non trouvé. Essayez un autre.")
+    st.subheader("Nom complet")
+    st.write(polymer_data[acronym]["nom"])
+    st.subheader("Formule chimique")
+    st.latex(polymer_data[acronym]["formule"])
     if "image_url" in polymer_data[acronym]:
         st.image(
         polymer_data[acronym]["image_url"],
         caption=f"Structure de {polymer_data[acronym]['nom']}",
         use_column_width=True
     )
+else:
+    st.error("Acronyme non trouvé. Essayez un autre.")
