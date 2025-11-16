@@ -6,12 +6,12 @@ st.set_page_config(page_title="Index des polymères", layout="centered")
 # Supprimer l'encadré rouge par défaut sur le champ de saisie
 st.markdown("""
     <style>
-    div[data-testid="stTextInputRootElement"] > div > input {
+    div[data-testid="stTextInput"] > div > input {
         border: 1px solid #ccc !important;
         border-radius: 5px;
     }
 
-    div[data-testid="stTextInputRootElement"] > div > input:focus {
+    div[data-testid="stTextInput"] > div > input:focus {
         border: 1px solid #ccc !important;
         outline: none !important;
         box-shadow: none !important;
