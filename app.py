@@ -97,7 +97,7 @@ polymer_data = {
     "PS/PPE": {"nom": "Alliage polystyrène/polyphénylène éther (Noryl)", "formule": "variable"},
     "PSE": {"nom": "Polystyrène expansible", "formule": "variable"},
     "SB": {"nom": "Polystyrène-choc", "formule": "variable"},
-    "MBS": {"nom": "Terpolymère méthacrylate, butadiène, styrène", "formule": "variable"}
+    "MBS": {"nom": "Terpolymère méthacrylate, butadiène, styrène", "formule": "variable"},
     "TPE": {"nom": "Elastomère thermoplastique", "formule": "variable"}
       
     # Tu peux ajouter les autres ici…
