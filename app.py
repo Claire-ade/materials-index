@@ -99,7 +99,8 @@ polymer_data = {
     "SB": {"nom": "Polystyrène-choc", "formule": "variable"},
     "MBS": {"nom": "Terpolymère méthacrylate, butadiène, styrène", "formule": "variable"},
     "TPE": {"nom": "Elastomère thermoplastique", "formule": "variable"},
-    "NR": {"nom": "Caoutchouc naturel (de 'natural rubber') ou Poly(isoprène)", "formule": r"CH_{2}C(CH_{3})CHCH_{2}", "image_url": "https://new.societechimiquedefrance.fr/wp-content/uploads/2019/12/arton318-1.png"}
+    "NR": {"nom": "Caoutchouc naturel (de 'natural rubber') ou Poly(isoprène)", "formule": r"CH_{2}C(CH_{3})CHCH_{2}", "image_url": "https://new.societechimiquedefrance.fr/wp-content/uploads/2019/12/arton318-1.png"},
+    "SBR": {"nom": "Caoutchouc styrène-butadiène", "formule": r"C_{6}H_{5}CHCH_{2}(C_{4}H_{6})_{n}"},
       
     # Tu peux ajouter les autres ici…
 }
