@@ -103,8 +103,9 @@ polymer_data = {
     "SBR": {"nom": "Caoutchouc styrène-butadiène", "formule": r"C_{6}H_{5}CHCH_{2}(C_{4}H_{6})_{n}"},
     "PDMS": {"nom": "Poly(diméthylsiloxane)", "formule": r"(Si(CH_{3})_{2}O)_{n}"},
     "PIB": {"nom": "Poly(isobutylène)", "formule": r"(C_{4}H_{8})_{n}"},
+    "PEG": {"nom": "Poly(éthylène glycol)", "formule": r"(C_{2}H_{4}O)_{n}"},
       
-    # Tu peux ajouter les autres ici…
+    # ajouter les autres ici ...
 }
 
 # Champ de saisie
