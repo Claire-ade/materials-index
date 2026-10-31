@@ -137,6 +137,8 @@ if acronym:
             polymer_data[acronym]["image_url"],
             caption=f"Structure de {polymer_data[acronym]['nom']}",
             use_column_width=True
-    )
+            )
+        st.subheader("Type de polymère")
+        st.write(polymer_data[acronym]["type"])
     else:
         st.error("Acronyme non trouvé. Essayez un autre.")
