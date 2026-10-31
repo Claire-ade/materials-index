@@ -24,7 +24,7 @@ st.title("🔍 Recherche d'acronymes de polymères")
 # Dictionnaire complet des acronymes
 polymer_data = {
   "ABS": {"nom": "Acrylonitrile Butadiène Styrène", "formule": r"(C_8H_8 \cdot C_4H_6 \cdot C_3H_3N)_n"},
-    "PTFE": {"nom": "Polytétrafluoroéthylène (Téflon)", "formule": r"(C_2F_4)_n"},
+    "PTFE": {"nom": "Polytétrafluoroéthylène (Téflon)", "formule": r"(C_2F_4)_n", "type": "thermoplastique semi-cristallin"},
     "PBT": {"nom": "Polybutylène téréphtalate", "formule": r"(C_{12}H_{12}O_4)_n"},
     "PMMA": {"nom": "Polyméthacrylate de méthyle", "formule": r"(C_5O_2H_8)_n"},
     "CA": {"nom": "Acétate de cellulose", "formule": "variable"},
