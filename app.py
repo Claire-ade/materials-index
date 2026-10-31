@@ -57,7 +57,7 @@ polymer_data = {
     "PVC/E": {"nom": "Mélange PVC/polyéthylène chloré", "formule": "variable"},
     "PVDC": {"nom": "Polychlorure de vinylidène", "formule": r"(C_2H_2Cl_2)_n"},
     "VC/P": {"nom": "Copolymère chlorure de vinyle/propylène", "formule": "variable"},
-    "PET": {"nom": "Polyéthylène téréphtalate", "formule": r"(C_{10}H_{8}O_{4})_n"},
+    "PET": {"nom": "Polyéthylène téréphtalate", "formule": r"(C_{10}H_{8}O_{4})_n", "type": "thermoplastique"},
     "PAI": {"nom": "Polyamide-imide (Torlon)", "formule": r"[-CO-C_6H_4-CO-NH-C_6H_4-NH-]_n"},
     "PAR": {"nom": "Polytéréphtalate de bisphénol A", "formule": r"[-C(CH_3)_2-C_6H_4-C_6H_4-COO-]_n"},
     "PEEK": {"nom": "Polyétheréthercétone", "formule": r"[-C_6H_4-O-C_6H_4-O-C_6H_4-CO-]_n"},
