@@ -103,3 +103,39 @@ polymer_data = {
     "PDMS": {"nom": "Poly(diméthylsiloxane)", "formule": r"(Si(CH_{3})_{2}O)_{n}", "type": "thermodurcissable amorphe"},  # élastomère silicone réticulé
     "PIB": {"nom": "Poly(isobutylène)", "formule": r"(C_{4}H_{8})_{n}", "type": "thermoplastique amorphe"},
     "PEG": {"nom": "Poly(éthylène glycol)", "formule": r"(C_{2}H_{4}O)_{n}", "type": "thermoplastique semi-cristallin"},
+}
+
+# Champ de saisie
+acronym = st.text_input("Entrez un acronyme de polymère (ex : PET, PVC, PMMA)").upper()
+# Appliquer encadrement vert uniquement si reconnu
+if acronym and acronym in polymer_data:
+    st.markdown("""
+        <style>
+        div[data-testid="stTextInputRootElement"] > div > input {
+            border: 2px solid #28a745;
+            border-radius: 5px;
+        }
+        div[data-testid="stTextInputRootElement"] > div > input:focus {
+            border: 2px solid #28a745;
+            border-radius: 5px;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
+# Affichage des résultats
+if acronym:
+    if acronym in polymer_data:
+        st.subheader("Nom complet")
+        st.write(polymer_data[acronym]["nom"])
+        st.subheader("Formule chimique")
+        st.latex(polymer_data[acronym]["formule"])
+        if "image_url" in polymer_data[acronym]:
+            st.image(
+            polymer_data[acronym]["image_url"],
+            caption=f"Structure de {polymer_data[acronym]['nom']}",
+            use_column_width=True
+            )
+        st.subheader("Type de polymère")
+        st.write(polymer_data[acronym]["type"])
+    else:
+        st.error("Acronyme non trouvé. Essayez un autre.")
