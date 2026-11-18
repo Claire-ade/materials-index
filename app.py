@@ -89,7 +89,7 @@ polymer_data = {
     "MDA": {"nom": "Méthylène dianiline", "formule": r"C_{13}H_{14}N_{2}", "type": "non applicable (précurseur du polyuréthane)"},
     "MOCA": {"nom": "Méthylène bis orthochloroaniline", "formule": r"C_{13}H_{12}Cl_{2}N_{2}", "type": "non applicable (durcisseur du polyuréthane)"},
     "ASA": {"nom": "Acrylonitrile styrène acrylate", "formule": r"(C_8H_8 \cdot C_3H_3N \cdot C_7H_{12}O_2)_n", "type": "thermoplastique amorphe"},  # acrylate de butyle
-    "mSMA": {"nom": "Polystyrène-anhydride maléique modifié", "formule": r"(C_8H_8 \cdot C_4H_2O_3)_n", "type": "thermoplastique amorphe"},
+    "MSMA": {"nom": "Polystyrène-anhydride maléique modifié", "formule": r"(C_8H_8 \cdot C_4H_2O_3)_n", "type": "thermoplastique amorphe"},
     "PC/ABS": {"nom": "Alliage polycarbonate/ABS", "formule": r"(C_{16}H_{14}O_3)_n + (C_8H_8 \cdot C_4H_6 \cdot C_3H_3N)_m", "type": "thermoplastique amorphe"},
     "PS": {"nom": "Polystyrène", "formule": r"(C_{8}H_{8})_n", "type": "thermoplastique amorphe"},
     "PS/PE": {"nom": "Mélange polystyrène/polyéthylène", "formule": r"(C_{8}H_{8})_n + (C_{2}H_{4})_m", "type": "thermoplastique amorphe / semi-cristallin (mélange)"},
