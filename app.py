@@ -108,6 +108,7 @@ polymer_data = {
     "PDMS": {"nom": "Poly(diméthylsiloxane)", "formule": r"(Si(CH_{3})_{2}O)_{n}"},
     "PIB": {"nom": "Poly(isobutylène)", "formule": r"(C_{4}H_{8})_{n}"},
     "PEG": {"nom": "Poly(éthylène glycol)", "formule": r"(C_{2}H_{4}O)_{n}"},
+    "PEO": {"nom": "Poly(oxyde d'éthylène)", "formule": r"(C_{2}H_{4}O)_{n}"},
       
     # ajouter les autres ici ...
 }
